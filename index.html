@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Create a div tag with a h2 tag for the heading,
+        then have a form tag, inside the form tag have a label tag for the label of  the textarea, and an input tag, 
+        and make it's type to be text, that will create a textarea,
+    also put some text on the textarea's placeholder,
+have a br tag after the input tag to make the next label take it's own line.
+Repeat the step for the second textarea -->
+    <div>
+        <h2>Bus Travel Widget</h2>
+        <form>
+            <label class="points">Points:</label>
+            <input type="text" placeholder="Enter points">
+            <br>
+            <label placeholder="Select start location">Start location:
+          
+            <select name="location" id="places">
+                <option value="">Khayelitsha</option>
+                <option value="">Dunoon</option>
+                <option value="">Mitchells Plain</option>   
+            </select>
+        </label>
+        </form>
+        <!-- Outside the form tag, have a h4 tag for the heading, then an iput tag,
+and set it's type to radio,that will create a radio button,
+then a label tag to label the radio button.
+Then a br tag to make the second radio button to take it's own line. -->
+        <h4>Travel Times</h4>
+        <input type="radio">
+        <label>Peak</label>
+        <br>
+        <input type="radio">
+        <label>Off peak</label>
+    </div>
+    <div>
+        <!-- Have an input tag to create a checkbox and a label to label the checkbox. -->
+        <input type="checkbox">
+        <label class="tickbox">Return Trip</label>
+        <div> <button>Calculate</button></div>
+    </div>
+
+
+    <h3>Calculations</h3>
+
+    <form>
+        <label class="single-trip">Number of Single trips:</label>
+        <input type="text" placeholder="Display the number of trips">
+        <br>
+        <label>Price per trip(single):</label>
+        <input type="text" placeholder="Display price per trip">
+        <br>
+        <label class="return-trip">Number of Return trips:</label>
+        <input type="text" placeholder="Display the number of return trips">
+        <br>
+        <label>Price per trip(return):</label>
+        <input type="text" placeholder="Display the price per trip">
+    </form>
+    </div>
+</body>
+
+</html>
