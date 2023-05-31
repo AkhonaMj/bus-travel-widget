@@ -36,16 +36,16 @@ and set it's type to radio,that will create a radio button,
 then a label tag to label the radio button.
 Then a br tag to make the second radio button to take it's own line. -->
         <h4>Travel Times</h4>
-        <input name="peak" type="radio">
+        <input name="radio" type="radio">
         <label>Peak</label>
         <br>
         <input type="radio">
-        <label name="off-peak">Off peak</label>
+        <label name="radio">Off peak</label>
     </div>
     <div>
         <!-- Have an input tag to create a checkbox and a label to label the checkbox. -->
-        <input type="checkbox">
-        <label class="tickbox">Return Trip</label>
+        <input class="checkReturn" type="checkbox">
+        <label >Return Trip</label>
         <div> <button>Calculate</button></div>
     </div>
 
@@ -53,19 +53,22 @@ Then a br tag to make the second radio button to take it's own line. -->
     <h3>Calculations</h3>
 
     <form>
-        <label class="single-trip">Number of Single trips:</label>
-        <input type="text" placeholder="Display the number of trips">
+        <label >Number of Single trips:</label>
+        <input class="single-trip" type="text" placeholder="Display the number of trips">
         <br>
         <label>Price per trip(single):</label>
-        <input type="text" placeholder="Display price per trip">
+        <input  class="single-trip-price"type="text" placeholder="Display price per trip">
         <br>
-        <label class="return-trip">Number of Return trips:</label>
-        <input type="text" placeholder="Display the number of return trips">
+        <label>Number of Return trips:</label>
+        <input class="return-trip" type="text" placeholder="Display the number of return trips">
         <br>
         <label>Price per trip(return):</label>
-        <input type="text" placeholder="Display the price per trip">
+        <input class="return-trip-price" type="text" placeholder="Display the price per trip">
     </form>
     </div>
+
+    <script src="bus-travel.js"></script>
+    <script src="bus-travel-dom.js"></script>
 </body>
 
 </html>

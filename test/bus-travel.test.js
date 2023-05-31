@@ -25,10 +25,19 @@ describe("Bus Travel Function", function(){
     assert.equal(30, busWidget.getPoints());
 
     })
-    it("Should be able to select peak hours or off peak hours", function(){
+    it("Should be able to select peak hours or off peak hours and return the points to be used", function(){
         let busWidget = BusWidget();
     busWidget.selectTravelTime("peak", "Khayelitsha ");
     assert.equal(50, busWidget.getPoints());
 
-    })
-})
+    });
+
+    it("Should be able to select peak hours or off peak hours", function(){
+        let busWidget = BusWidget();
+        busWidget.getPoints(100);
+      
+    busWidget.selectTravelTime("peak", "Khayelitsha ");
+    assert.equal(2, busWidget.getPoints());
+
+    });
+});

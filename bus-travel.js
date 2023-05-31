@@ -8,7 +8,6 @@ function BusWidget() {
     function enterPoints(thePoints) {
         points = thePoints
     }
-    // create a function to be able to see the points
    
     //create a function to choose the starting location and return the points to be used
     function selectStartPoint(place) {
@@ -29,10 +28,12 @@ function BusWidget() {
     //create a function to select travel time
     function selectTravelTime(time, place) {
        if(time == "peak" && place == "Khayelitsha" ){
-        points += 40 
+        points += 50 
        }
     
     }
+     // create a function to be able to see the points
+   
     function getPoints() {
         return points
 
@@ -42,7 +43,6 @@ function BusWidget() {
         enterPoints,
         getPoints,
         selectStartPoint,
-        //getStartPoint,
         selectTravelTime
     }
 }
